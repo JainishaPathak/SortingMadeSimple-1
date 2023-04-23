@@ -9,6 +9,11 @@ import Bar from "./components/Bar";
 import Hr from "./components/Hr";
 // Quick Sort Algorithm
 import quickFun from "./components/utils/algorithms/quickSortFun";
+import { Box } from "@mui/material";
+import CodeHighlight from "./components/CodeHighlight";
+import { QuickSortCode } from '../helper/SourceCode'
+import QuickSortLogo from '../images/quick-sort-logo.png'
+
 
 const useStyles = makeStyles({
 	CanvasContainer: {
@@ -159,33 +164,9 @@ const QuickSort = () => {
 
 	return (
 		<div>
-			<h2
-				style={{
-					fontWeight: "700",
-					padding: "2px",
-					textTransform: "uppercase",
-					textAlign: "center",
-					color: "#101820FF",
-					background: "#fff",
-					width: "20%",
-
-					display: "flex",
-					justifyContent: "center",
-					flexDirection: "column ",
-					alignItems: "center",
-
-					marginTop: "5px",
-					marginLeft: "auto",
-					marginRight: "auto ",
-					borderRadius: "4px",
-				}}
-			>
-				Quick Sort
-				<hr
-					style={{ width: "200px", border: "none ", height: "1px" }}
-					color="#e7e7e7"
-				/>
-			</h2>
+			<Box sx={{ width: "100vw", height: '18vh', display: "flex", alignItems: "center", justifyContent: "center", marginY: "1rem", marginTop: '4.5rem' }}>
+				<img src={QuickSortLogo} style={{ maxWidth: 'auto', height: '100%' }} />
+			</Box>
 
 			<div className={CanvasContainer}>
 				{/* //Here Position for "CANVAS" */}
@@ -268,18 +249,18 @@ const QuickSort = () => {
 								alreadySorted === false
 									? handleClick
 									: () => {
-											const key = "updatable";
-											notification.open({
-												key,
-												description:
-													"Array already sorted ! Please change slider ",
-												duration: 2,
-												style: {
-													fontSize: "90%",
-												},
-												icon: <WarningOutlined style={{ color: "red" }} />,
-											});
-									  }
+										const key = "updatable";
+										notification.open({
+											key,
+											description:
+												"Array already sorted ! Please change slider ",
+											duration: 2,
+											style: {
+												fontSize: "90%",
+											},
+											icon: <WarningOutlined style={{ color: "red" }} />,
+										});
+									}
 							}
 						>
 							Sort
@@ -287,6 +268,9 @@ const QuickSort = () => {
 					</div>
 				</div>
 			</div>
+			<Box display='flex' justifyContent='center' alignItems='center' height='100%'>
+				<CodeHighlight {...QuickSortCode} />
+			</Box>
 		</div>
 	);
 };

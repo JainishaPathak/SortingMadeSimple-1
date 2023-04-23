@@ -45,9 +45,9 @@ function Home() {
 					"Quick Sort is also sorting algorithm .It's name Quick sort that does n't mean it is Fastest Algorithm 😃. It is faster than Bubble sort. It is divide and conquer algorithm so , It's use Recursion .So time complexity is less compair to Bubble Sort .  ",
 			},
 			{
-				title: " Singly Linked List",
-				imgSrc: LinkedListImg,
-				url: "/singlylinklist",
+				title: " Merge Sort",
+				imgSrc: QuickSortImg,
+				url: "/MergeSort",
 				desc:
 					"SinglyLinked List is a Data Structure. Where every node pointing a Tail and adding or removing an element in a Linked List from the front,the end or from anywhere in the list But in This project we can remove or add from last in list.It's like VECTOR in Mathematices because it's one directional ",
 			},
@@ -55,19 +55,27 @@ function Home() {
 
 		[
 			{
-				title: "Dfs",
-				imgSrc: DfsImg,
-				url: "/dfs",
-				desc:
-					"DFS is searching technique an element in a Graph. Here BFS is using 'Backtracking' for searching an element.	And it's search in Defth of an Graph if elements not found then backtrack will Happen",
-			},
-			{
 				title: "Dijkstra",
 				imgSrc: DijkstraImg,
 				url: "/dijkstra",
 				desc:
 					"Dijkstra is a path finding algorithm.It is used in .It can find shortest path between two nodes in a Graph.It can perform only in weighted graph.To find two nodes we can use adjacency list or matrix.  ",
 			},
+			{
+				title: "Selection",
+				imgSrc: BubbleSortImg,
+				url: "/selectionSort",
+				desc:
+					"Selection Sort is a simple sorting algorithm that sorts an array by repeatedly finding the minimum element from unsorted part and placing it at the beginning. It works by selecting the smallest (or largest, depending on the order) element from the unsorted portion of the array and swapping it with the first element of the unsorted portion. This process is repeated until the entire array is sorted in ascending (or descending) order. Although easy to implement, it has an average and worst-case time complexity of O(n^2), making it inefficient for large data sets.",
+			},
+			{
+				title: "Insertion",
+				imgSrc: BubbleSortImg,
+				url: "/insertionSort",
+				desc:
+					"Insertion Sort is a simple sorting algorithm that works well for small lists. It involves iterating through an array and sorting each element in its proper place by comparing it with the elements before it. Insertion sort has an average time complexity of O(n^2), but performs efficiently on almost sorted lists.",
+			},
+			
 		],
 	];
 

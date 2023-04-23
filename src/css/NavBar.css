@@ -1,6 +1,5 @@
-nav {
+/* .nav {
 	height: 50px;
-
 	display: flex;
 	z-index: 999;
 	justify-content: space-around;
@@ -8,7 +7,7 @@ nav {
 	color: rgb(75, 73, 73);
 	border-bottom: 1px solid rgb(204, 204, 204);
 	box-shadow: 0px 1px 6px rgb(184, 182, 182);
-}
+} */
 
 .logo {
 	padding: 11px;

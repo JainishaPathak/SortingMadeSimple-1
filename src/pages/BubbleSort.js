@@ -10,6 +10,15 @@ import { makeStyles } from "@material-ui/core/styles";
 import EqualizerIcon from "@material-ui/icons/Equalizer";
 import ShuffleIcon from "@material-ui/icons/Shuffle";
 
+import { Box } from '@mui/system'
+import CodeHighlight from './components/CodeHighlight'
+import SortGenerator from './components/SortGenerator'
+import BubbleSortLogo from '../images/bubble-sort-logo.png'
+import { bubbleSort } from '../helper/sortingAlgorithms'
+import { BubbleSortCode } from '../helper/SourceCode'
+
+
+
 const useStyles = makeStyles({
 	CanvasContainer: {
 		width: "100%",
@@ -163,10 +172,20 @@ const BubbleSort = () => {
 
 	return (
 		<div>
-			<h2
+
+			<SortGenerator
+				name={'bubble'}
+				image={BubbleSortLogo}
+				sortFunc={bubbleSort}
+
+			/>
+
+
+<h2
 				style={{
 					fontWeight: "700",
 					padding: "2px",
+					paddingTop:"15px",
 					textTransform: "uppercase",
 					textAlign: "center",
 					color: "#101820FF",
@@ -177,13 +196,13 @@ const BubbleSort = () => {
 					flexDirection: "column ",
 					alignItems: "center",
 
-					marginTop: "5px",
+					marginTop: "3rem",
 					marginLeft: "auto",
 					marginRight: "auto ",
 					borderRadius: "3px",
 				}}
 			>
-				Bubble Sort
+				Visualizing Bubble Sort
 				<hr
 					style={{ width: "200px", border: "none ", height: "1px" }}
 					color="#e7e7e7"
@@ -274,18 +293,18 @@ const BubbleSort = () => {
 								alreadySorted === false
 									? handleClick
 									: () => {
-											const key = "updatable";
-											notification.open({
-												key,
-												description:
-													"Array already sorted ! Please change slider ",
-												duration: 2,
-												style: {
-													fontSize: "90%",
-												},
-												icon: <WarningOutlined style={{ color: "red" }} />,
-											});
-									  }
+										const key = "updatable";
+										notification.open({
+											key,
+											description:
+												"Array already sorted ! Please change slider ",
+											duration: 2,
+											style: {
+												fontSize: "90%",
+											},
+											icon: <WarningOutlined style={{ color: "red" }} />,
+										});
+									}
 							}
 						>
 							Sort
@@ -293,6 +312,10 @@ const BubbleSort = () => {
 					</div>
 				</div>
 			</div>
+
+			<Box display='flex' justifyContent='center' alignItems='center' height='100%' sx={{ mt: '3rem' }}>
+				<CodeHighlight {...BubbleSortCode} />
+			</Box>
 		</div>
 	);
 };
