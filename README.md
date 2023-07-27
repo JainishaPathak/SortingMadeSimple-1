@@ -1,6 +1,6 @@
 <div align="center" style="height: 130px">
 
-<h1 align="center">  ALGO / VISUALIZER </h1>
+<h1 align="center">  SORTING MADE SIMPLE </h1>
 Algorithm visualizer is a react base web app where we can visualize and play with algorithm.
 
 </div>
@@ -99,28 +99,9 @@ Time Complexity is n^2 because here i used Two itarations .
 
 </div>
 
-<div>
 
-<h2 style="color: #323dfa; font-weight:500"> Singly Linked List </h2>
-<p>
-   Singly Linked List is a type of Data structure . Where it can used in store Data . In this List where every element has a Head and Tail . And every element pointing to tail . And it is a <strong> One Dircetional </strong> like <strong> Vector in Mathematices</strong>.
-   We can add or remove element from the front, the end or from anywhere in the list. <strong style="color:red "> But in This project we can remove or add from last in list</strong>
 
-</p>
-  <img src='./Github/Images/SinglyLinkedList.png'>
 
-</div>
-
-<div>
-
-<h2 style="color: #323dfa;font-weight:500;"> DFS </h2>
-<p>
-   DFS is searching technique in a Graph . DFS means Depth first search. In this technique search will happen in depth of tree if seaching node is found then search is complete but id searching node is not found . it will backtrack .
-
-</p>
-  <img src='./Github/Images/Dfs.png'>
-
-</div>
 
 <div>
 
