@@ -1,7 +1,7 @@
 <div align="center" style="height: 130px">
 
 <h1 align="center">  SORTING MADE SIMPLE </h1>
-Algorithm visualizer is a react base web app where we can visualize and play with algorithm.
+Sorting made Simple is a react base web app where we can visualize and play with algorithm. Also you get to see how the numbers were sorted with our sorting iteration list
 
 </div>
 
